@@ -1,0 +1,23 @@
+<p>home-page works!</p>
+<app-navbar></app-navbar>
+<section class="aside">
+    <table class="user-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Role</th>
+            <th>Last Active</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.role }}</td>
+            <td>{{ user.lastActive }}</td>
+          </tr>
+        </tbody>
+      </table>
+</section>
+<app-footer></app-footer>
